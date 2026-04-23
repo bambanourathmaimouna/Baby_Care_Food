@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1ffff;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 130px;
+    margin-left: 50px;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px; 
+}
+
+.menu a{
+    text-decoration: none;
+    color: #4a81e7;
+}
+
+header button{
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fc7d9c;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px; 
+    border: none;
+    cursor: pointer;
+}
+.all{
+    height: 600px;
+background-image: linear-gradient(rgba(5, 34, 68, 0.5), rgba(19, 70, 102, 0.5)), url('IMAGES/recette.jpeg'); background-repeat: no-repeat;
+    background-size: cover;
+   justify-content: end;
+   display: flex;
+
+
+}
+.all1{
+    width: 25%;
+    height: 250px;
+    margin:10% ;
+
+}
+.all1 h2{
+    color: #4a81e7;
+    font-size: 50px;
+    margin: 50px;
+}
+.all1 h3{
+    color: #fc7d9c;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.moyenne{
+    width: 50%;
+    margin: 50px auto;
+}
+.moyenne h1{
+    font-size: 30px;
+    color: #fc7d9c;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+footer{
+    height: 100%;
+    background-color: #1a2243;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.log img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.slog{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px ;
+ }
+ 
+
+
+ @media screen and (max-width: 1024px){
+
+    nav{
+        width: 70%;
+    }
+
+    .menu{
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .all{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all1{
+        width: 70%;
+        margin: 0;
+    }
+
+    .all1 h2,
+    .all1 h3{
+        font-size: 35px;
+        margin: 10px 0;
+    }
+
+    .moyenne{
+        width: 80%;
+    }
+
+    .moyenne h1{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .logo img{
+        margin-left: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    header button{
+        width: 80%;
+        margin-left: 20px;
+    }
+    .all{
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .all1{
+        width: 100%;
+        margin: 0;
+    }
+
+    .all1 h2{
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .all1 h3{
+        font-size: 28px;
+        margin: 10px 0;
+    }
+    .moyenne{
+        width: 90%;
+    }
+
+    .moyenne h1{
+        font-size: 22px;
+        padding-left: 0;   
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0fcff;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 130px;
+    margin-left: 50px;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px; 
+}
+
+.menu a{
+    text-decoration: none;
+    color: #4a81e7;
+}
+
+header button{
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fc7d9c;
+    color: white;
+    font-size: 18px;
+    padding: 0 10px; 
+    border: none;
+    cursor: pointer;
+}
+
+.all{
+    height: 500px;
+    display: flex;
+}
+.all1{
+    width: 50%;
+    height: auto;
+    background-color: white;
+}
+.re{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: #4a81e7;
+}
+.mo{
+    width: 95%;
+    font-size: 40px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b74cf;
+}
+
+.all2{
+    width: 50%;
+    height: auto;
+    background-image: url(IMAGES/Baby\ Development_\ Growth\ Stages\ –\ Royalty-Free\ Vector\ _\ VectorStock.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.presentation{
+    width: 30%;
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fc7d9c;
+    margin: 50px auto;
+}
+.formulaire{
+    width: 30%;
+    height: auto;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 30px 80px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.deux{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    border: 2px solid black;
+}
+
+.petit1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.petit2{
+ width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.petit1{
+    border-right: 1px solid black;
+}
+.la{
+    width: 80%;
+    height: 55px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 0 10px;
+}
+.le{
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.le button{
+    width: 100%;
+    height: 100%;
+    background-color: #4a81e7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.resultat{
+    width: 80%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+}
+.pano{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reponse{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pano  i{
+    font-size: 40px;
+}
+.reponse h3{
+    font-size: 25px;
+    color: #fc7d9c;
+}
+
+
+
+footer{
+    height: 100%;
+    background-color: #1a2243;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.log img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.slog{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+    nav{
+        width: 70%;
+    }
+
+    .menu{
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .all{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .all1, .all2{
+        width: 100%;
+        height: 300px;
+    }
+
+    .presentation{
+        width: 70%;
+        text-align: center;
+    }
+
+    .formulaire{
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .logo img{
+        margin-left: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    header button{
+        width: 80%;
+        margin-left: 20px;
+    }
+    .all{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .all1, .all2{
+        width: 100%;
+        height: 250px;
+    }
+
+    .re{
+        font-size: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .mo{
+        font-size: 25px;
+        margin: 20px;
+        text-align: center;
+    }
+    .presentation{
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .formulaire{
+        width: 95%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .deux{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .petit1, .petit2{
+        width: 100%;
+        height: 50px;
+    }
+
+    .petit1{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .la{
+        width: 95%;
+        height: 50px;
+    }
+
+    .le{
+        width: 90%;
+    }
+
+    .resultat{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .pano, .reponse{
+        width: 100%;
+    }
+
+    .reponse h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1ffff;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 130px;
+    margin-left: 50px;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px; 
+}
+
+.menu a{
+    text-decoration: none;
+    color: #4a81e7;
+}
+
+header button{
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fc7d9c;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px; 
+    border: none;
+    cursor: pointer;
+}
+
+.all{
+    height: 500px;
+    display: flex;
+}
+.all1{
+    width: 50%;
+    height: auto;
+    background-color: #b5d1f1;
+}
+.all2{
+    width: 50%;
+    height: auto;
+    background-image: url(IMAGES/_\ \(5\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.re{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: #4a81e7;
+}
+.mo{
+    width: 95%;
+    font-size: 40px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b74cf;
+}
+.barre{
+    width: 30%;
+    height: 100px;
+    border-radius: 30px;
+    margin: 50px auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.barre h2{
+    font-size: 30px;
+    color: #4a81e7;
+}
+.barre i{
+    font-size: 50px;
+}
+.grand{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+.moyen{
+    width: 40%;
+    height: 100%;
+}
+.petit{
+    width: 75%;
+    height: 23%;
+    margin: 20px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.petit h3{
+    color:#FF6A8D;
+    font-size: 18px;
+    margin: 15px auto;
+}
+.petit .p1{
+    color: #4981E7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.petit .p2{
+    color: #4981E7;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+footer{
+    height: 100%;
+    background-color: #1a2243;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.log img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.slog{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1024px){
+
+    nav{
+        width: 70%;
+    }
+
+    .menu{
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .all{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .all1, .all2{
+        width: 100%;
+        height: 300px;
+    }
+
+    .barre{
+        width: 60%;
+        height: 80px;
+    }
+
+    .grand{
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+
+    .moyen{
+        width: 80%;
+    }
+
+    .petit{
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .logo img{
+        margin-left: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    header button{
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .all{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .all1, .all2{
+        width: 100%;
+        height: 250px;
+    }
+
+    .re{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .mo{
+        font-size: 25px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .barre{
+        width: 90%;
+        height: 70px;
+    }
+
+    .barre h2{
+        font-size: 20px;
+    }
+
+    .barre i{
+        font-size: 30px;
+    }
+
+    .grand{
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .moyen{
+        width: 100%;
+    }
+
+    .petit{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
