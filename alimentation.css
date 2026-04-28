@@ -158,7 +158,6 @@ header button{
     gap: 20px;
     flex-direction: column;
     display: flex;
-
 }
 .trois{
     height: 50%;
@@ -179,12 +178,11 @@ header button{
     height:100%;
 }
 .le{
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 7px;
     align-items: center;
-    
 }
 .le h2{
     color: #ff6a8d;
@@ -238,7 +236,7 @@ footer{
 
 
 
-/* TABLETTE */
+/* TABLETTE
 @media screen and (max-width: 1024px) {
     nav {
         width: 70%;
@@ -366,4 +364,63 @@ footer{
         gap: 20px;
         text-align: center;
     }
+} */
+
+
+/* ============================================================
+   PROTOCOLE MAX : OPTIMISATION RESPONSIVE MULTI-SUPPORTS
+   ============================================================ */
+
+/* --- 1. TABLETTE ET PETITS LAPTOPS (Max 1100px) --- */
+@media screen and (max-width: 1100px) {
+    .menu { gap: 20px; font-size: 16px; }
+    .barre { gap: 50px; }
+    .pe { margin-left: 0; width: 90%; margin: 20px auto; }
+    .IMAGES { height: auto; } /* On libère la hauteur fixe */
 }
+
+/* --- 2. SMARTPHONES (Max 768px) --- */
+@media screen and (max-width: 768px) {
+    /* Header & Nav */
+    header { height: auto; flex-direction: column; padding: 20px 0; }
+    .logo img { margin-left: 0; margin-bottom: 20px; }
+    nav { width: 100%; }
+    .menu { flex-direction: column; gap: 15px; text-align: center; }
+
+    /* Hero Section (.all) */
+    .all { height: auto; flex-direction: column; }
+    .all1, .all2 { width: 100%; height: 400px; }
+    .mo { font-size: 28px; margin: 20px; }
+    .pe { font-size: 18px; text-align: center; }
+
+    /* Barre de sélection d'âge */
+    .barre { height: auto; flex-direction: column; gap: 15px; padding: 20px; }
+    .ma, .me { width: 80%; height: 60px; }
+
+    /* Grille de Recettes */
+    .IMAGES { width: 95%; height: auto; }
+    .trois { flex-direction: column; height: auto; align-items: center; }
+    .petit { width: 90%; height: auto; margin-bottom: 30px; }
+    .la { height: 250px; } /* Hauteur fixe pour l'image uniquement */
+
+    /* Footer */
+    footer { flex-direction: column; height: auto; gap: 30px; text-align: center; }
+}
+
+/* --- 3. PETITS TÉLÉPHONES (Max 480px) --- */
+@media screen and (max-width: 480px) {
+    .mo { font-size: 22px; }
+    .ma { font-size: 18px; }
+    .button { width: 80%; }
+}
+
+/* --- 4. TÉLÉVISIONS ET ÉCRANS 4K (Min 2000px) --- */
+@media screen and (min-width: 2000px) {
+    body { font-size: 1.2rem; }
+    .all, .barre, .IMAGES, footer {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

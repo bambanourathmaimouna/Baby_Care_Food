@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #f1ffff;
+    background-color: #f0fcff;
 }
 header{
     height: 100px;
@@ -84,6 +84,12 @@ background-image: linear-gradient(rgba(5, 34, 68, 0.5), rgba(19, 70, 102, 0.5)),
     color: #fc7d9c;
     text-align: center;
     margin: 50px auto;
+}
+.moyenne b{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30Px;;
 }
 
 

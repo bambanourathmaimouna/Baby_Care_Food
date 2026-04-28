@@ -15,6 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo img{
@@ -55,7 +56,7 @@ header button{
 
 .all{
     height: 700px;
-    background-image: url("IMAGES/WhatsApp Image 2026-04-02 at 14.13.01.jpeg"); 
+    background-image: url("IMAGES/principale.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 60px;
